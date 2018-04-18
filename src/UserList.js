@@ -28,10 +28,12 @@ let UserList = () => {
       {renderAuthorList()}
     </div>
 
+
   return <section>
     <div> 
       <UsersNavbar />
-      <Route path="/user" component={Homepage} />
+      <NavLink to="/list">All Sups!</NavLink>
+      {/* <Route path="/user/:author" component={UserScreen} /> */}
     </div>
   </section>
 }

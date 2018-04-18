@@ -6,7 +6,6 @@ import ReactDOM from 'react-dom';
 
 
 let UserScreen = (props) => {
-    console.log('USERSCREEN');
     let userSups = SupsAPI.sups.filter( sup=> sup.author === props.match.params.author);
     let renderSups = ()=> {
         return (
@@ -18,7 +17,7 @@ let UserScreen = (props) => {
         )
     }
     return <div><br/><br/>
-    <h2> hey
+    <h2>
     {props.match.params.author}</h2>
         <ul>
           {
