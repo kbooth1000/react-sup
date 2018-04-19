@@ -1,8 +1,6 @@
 import React from 'react';
 import Sup from './Sup';
 import SupsAPI from './sups-api';
-import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 
 
 let UserScreen = (props) => {
@@ -18,7 +16,7 @@ let UserScreen = (props) => {
     }
     return <div><br/><br/>
     <h2>
-    {props.match.params.author}</h2>
+    {props.match.params.author} says:</h2>
         <ul>
           {
             renderSups()

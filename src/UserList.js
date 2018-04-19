@@ -1,10 +1,7 @@
 import React from 'react';
 import UserScreen from './UserScreen';
-import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
-import ReactDOM from 'react-dom';
+import {NavLink } from 'react-router-dom';
 import SupsAPI from './sups-api';
-
-let Homepage = () => <h1>Users:</h1>
 
 let UserList = () => {
 

@@ -2,8 +2,7 @@ import React from 'react';
 import SupList from './SupList';
 import UserList from './UserList';
 import UserScreen from './UserScreen';
-import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
-import ReactDOM from 'react-dom';
+import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
 import Homepage from './Homepage';
 
 

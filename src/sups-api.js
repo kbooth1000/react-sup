@@ -19,12 +19,7 @@ let SupsAPI =
         body: 'We got all the fools in town on our side!',
         time: new Date()
       }
-    ],
-  getAllSups: () => { return this.sups },
-  getOneSup: (keynum) => {
-    let oneSup = sup => sup.key === keynum;
-    return this.sups.find(oneSup);
-  }
+    ]
 }
 
 export default SupsAPI
