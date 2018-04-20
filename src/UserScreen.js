@@ -4,7 +4,8 @@ import SupsAPI from './sups-api';
 
 
 let UserScreen = (props) => {
-    let userSups = SupsAPI.sups.filter( sup=> sup.author === props.match.params.author);
+    console.log('userscreen props: ', props);
+    let userSups = props.supData.filter( sup=> sup.author === props.supData.author);
     let renderSups = ()=> {
         return (
             userSups.map( sup=>(
@@ -16,7 +17,7 @@ let UserScreen = (props) => {
     }
     return <div><br/><br/>
     <h2>
-    {props.match.params.author} says:</h2>
+    {userSups.author} says:</h2>
         <ul>
           {
             renderSups()

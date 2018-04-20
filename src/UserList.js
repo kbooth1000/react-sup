@@ -1,13 +1,13 @@
 import React from 'react';
 import UserScreen from './UserScreen';
-import {NavLink } from 'react-router-dom';
+import {NavLink, Route } from 'react-router-dom';
 import SupsAPI from './sups-api';
 
-let UserList = () => {
+let UserList = (props) => {
 
   let renderAuthorList = () => {
     let authors = [];
-    SupsAPI.sups.forEach(sup => {
+    props.supData.forEach(sup => {
       authors.push(sup.author);
     });
 
@@ -32,6 +32,7 @@ let UserList = () => {
       <NavLink to="/list">All Sups!</NavLink>
       {/* <Route path="/user/:author" component={UserScreen} /> */}
     </div>
+    {/* <Route path="/user/:author" component={UserScreen} /> */}
   </section>
 }
 
