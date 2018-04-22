@@ -1,5 +1,6 @@
 import React from 'react';
 import Sup from './Sup';
+import AddSup from './AddSup';
 
 class AuthorProfile extends React.Component {
     constructor(props) {
@@ -46,7 +47,9 @@ class AuthorProfile extends React.Component {
                     renderSups()
                 }
             </ul>
+            <AddSup author={this.props.match.params.author} />
         </div>
+        
     };
 };
 

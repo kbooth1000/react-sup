@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class AuthorList extends React.Component {
     constructor(props) {
@@ -39,7 +39,7 @@ class AuthorList extends React.Component {
                 return arr.indexOf(elem) === pos;
             });
             return (filteredAuthors.map(author =>
-                <h3 key={author}><NavLink to={'/user/' + author} supData={this.state.allSups} > {author} </NavLink></h3>
+                <h3 key={author}><NavLink to={'/user/' + author}> {author} </NavLink></h3>
             )
             )
         };
